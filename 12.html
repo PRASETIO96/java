@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wawancara</title>
+  </head>
+  <body>
+    <script>
+      // Parent Class
+      class Painting {
+        constructor(tittle, style, artist) {
+          this.tittle = tittle;
+          this.style = style;
+          this.artist = artist;
+        }
+
+        infoPainting() {
+          return ` Lukisan "${this.tittle}" dengan gaya ${this.style} oleh ${this.artist}.`;
+        }
+      }
+
+      // Child Class
+      class AbstrackPainting extends Painting {
+        constructor(tittle, style, artist, DominantCOlOR) {
+          super(tittle, style, artist); // Memanggil constructor dari parent
+          this.DominantCOlOR = DominantCOlOR;
+        }
+
+        describePainting() {
+          return ` Lukisan "${this.tittle}" dengan gaya ${this.style} Alat yang sering di gunakan ${this.artist} memiliki warna dominan${this.DominantCOlOR}.`;
+        }
+      }
+
+      // Contoh Penggunaan
+      const Painting1 = new AbstrackPainting(
+        "Pegunungan",
+        "Abstrak,",
+        "Kuas,Cat,",
+        " Hitam,Putih"
+      );
+
+      document.writeln(Painting1.describePainting() + "<br>");
+      // document.writeln(AbstrackPainting1.describePainting() + "<br><br>");
+    </script>
+  </body>
+</html>
