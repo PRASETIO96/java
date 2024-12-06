@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymorphism</title>
+  </head>
+  <body>
+    <script>
+      //Parent Class
+      class coffee {
+        name() {
+          return "Sebutkan nama kawanmu";
+        }
+        favorite() {
+          return "Kopi Favorite";
+        }
+        Brew() {
+          return "Metode Yang Digunakan";
+        }
+      }
+
+      //Child Classes
+      class RijalPainting extends coffee {
+        name() {
+          return "Rijal";
+        }
+        favorite() {
+          return "Esspresso";
+        }
+        Brew() {
+          return "Mesin Esspresso";
+        }
+      }
+
+      class WulanGarden extends coffee {
+        name() {
+          return "Wulandari";
+        }
+        favorite() {
+          return "Gula Aren";
+        }
+        Brew() {
+          return "Mesin";
+        }
+      }
+
+      class ZiyadCooking extends coffee {
+        name() {
+          return "Ziyad";
+        }
+        favorite() {
+          return "Latte";
+        }
+        Brew() {
+          return "Manual ";
+        }
+      }
+
+      class RehanGamers extends coffee {
+        name() {
+          return "Rehan";
+        }
+        favorite() {
+          return "Americano";
+        }
+        Brew() {
+          return "Mesin";
+        }
+      }
+
+      class WaielTraveling extends coffee {
+        name() {
+          return "Waiel";
+        }
+        favorite() {
+          return "Latte";
+        }
+        Brew() {
+          return "Mesin";
+        }
+      }
+
+      // Contoh Penggunaan
+      const Rijal = new RijalPainting();
+      const Wulandari = new WulanGarden();
+      const Ziyad = new ZiyadCooking();
+      const Rehan = new RehanGamers();
+      const Waiel = new WaielTraveling();
+
+      document.writeln(
+        Rijal.name() +
+          "<br>" +
+          "Kopi Favorite: " +
+          Rijal.favorite() +
+          "<br>" +
+          "Dengan Metode Yang Digunakan: " +
+          Rijal.Brew() +
+          "<br><br>"
+      );
+
+      document.writeln(
+        Wulandari.name() +
+          "<br>" +
+          "Kopi Favorite: " +
+          Wulandari.favorite() +
+          "<br>" +
+          "Dengan Metode Yang Digunakan: " +
+          Wulandari.Brew() +
+          "<br><br>"
+      );
+
+      document.writeln(
+        Ziyad.name() +
+          "<br>" +
+          "Kopi Favorite: " +
+          Ziyad.favorite() +
+          "<br>" +
+          "Dengan Metode Yang Digunakan: " +
+          Ziyad.Brew() +
+          "<br><br>"
+      );
+
+      document.writeln(
+        Rehan.name() +
+          "<br>" +
+          "Kopi Favorite: " +
+          Rehan.favorite() +
+          "<br>" +
+          "Dengan Metode Yang Digunakan: " +
+          Rehan.Brew() +
+          "<br><br>"
+      );
+
+      document.writeln(
+        Waiel.name() +
+          "<br>" +
+          "Kopi Favorite: " +
+          Waiel.favorite() +
+          "<br>" +
+          "Dengan Metode Yang Digunakan: " +
+          Waiel.Brew() +
+          "<br><br>"
+      );
+    </script>
+  </body>
+</html>
