@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Activities</title>
+  </head>
+  <body>
+    <script>
+      // Base Class
+      class Prasetio_Pet {
+        Nama() {
+          return "Nama Teman";
+        }
+        Activity() {
+          return "Aktivitas";
+        }
+      }
+
+      // Child Classes
+      class Dog extends Prasetio_Pet {
+        Nama1() {
+          return "Rijal";
+        }
+        Nama2() {
+          return "Ambar";
+        }
+        Nama3() {
+          return "Patricia";
+        }
+        Activity1() {
+          return "Bola";
+        }
+        Activity2() {
+          return "Pohon";
+        }
+        Activity3() {
+          return "Sangkar";
+        }
+      }
+
+      class Cat extends Prasetio_Pet {
+        Nama1() {
+          return "Wulandari";
+        }
+        Nama2() {
+          return "Astia";
+        }
+        Nama3() {
+          return "Khaerani";
+        }
+        Activity1() {
+          return "Bola";
+        }
+        Activity2() {
+          return "Pohon";
+        }
+        Activity3() {
+          return "Sangkar";
+        }
+      }
+
+      class Bird extends Prasetio_Pet {
+        Nama1() {
+          return "Ziyad";
+        }
+        Nama2() {
+          return "Zaky";
+        }
+        Nama3() {
+          return "Ferdi";
+        }
+        Nama4() {
+          return "Salsa";
+        }
+        Activity1() {
+          return "Bola";
+        }
+        Activity2() {
+          return "Pohon";
+        }
+        Activity3() {
+          return "Sangkar";
+        }
+        Activity4() {
+          return "Bola";
+        }
+      }
+
+      // Contoh Penggunaan
+      const Rijal = new Dog();
+      const Ambar = new Dog();
+      const Patricia = new Dog();
+      const Wulandari = new Cat();
+      const Astia = new Cat();
+      const Khaerani = new Cat();
+      const Ziyad = new Bird();
+      const Zaki = new Bird();
+      const Ferdi = new Bird();
+      const Salsa = new Bird();
+
+      document.writeln(
+        Rijal.Nama1() +
+          " Sedang Bermain Lempar Tangkap " +
+          Rijal.Activity1() +
+          "<br>"
+      );
+
+      document.writeln(
+        Ambar.Nama2() + " Sedang Memanjat " + Ambar.Activity2() + "<br>"
+      );
+      document.writeln(
+        Patricia.Nama3() +
+          " Sedang Berkicau Di " +
+          Patricia.Activity3() +
+          "<br>"
+      );
+      document.writeln(
+        Wulandari.Nama1() +
+          " Sedang Bermain Lempar Tangkap " +
+          Wulandari.Activity1() +
+          "<br>"
+      );
+      document.writeln(
+        Astia.Nama2() + " Sedang Memanjat " + Astia.Activity2() + "<br>"
+      );
+      document.writeln(
+        Khaerani.Nama3() +
+          " Sedang Berkicau Di " +
+          Khaerani.Activity3() +
+          "<br>"
+      );
+
+      document.writeln(
+        Ziyad.Nama1() +
+          " Sedang Bermain Lempar Tangkap " +
+          Ziyad.Activity1() +
+          "<br>"
+      );
+
+      document.writeln(
+        Zaki.Nama2() + " Sedang Memanjat  " + Zaki.Activity2() + "<br>"
+      );
+      document.writeln(
+        Ferdi.Nama3() + " Sedang Berkicau Di " + Ferdi.Activity3() + "<br>"
+      );
+      document.writeln(
+        Salsa.Nama4() + " Sedang Bermain Tangkap " + Salsa.Activity4() + "<br>"
+      );
+    </script>
+  </body>
+</html>
